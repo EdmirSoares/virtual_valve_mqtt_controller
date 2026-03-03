@@ -1,4 +1,5 @@
-# Virtual Valve MQTT Controller
+# Virtual Valve MQTT Controller![mqtt_flutter](https://github.com/user-attachments/assets/ff9a4b35-df23-40ad-8d6a-7bb7f0c05f3e)
+
 
 Aplicação Flutter de IoT industrial demonstrando comunicação e controle em tempo real de uma válvula virtual através do protocolo MQTT. Este projeto foi desenvolvido como forma de aprendizado para entender a comunicação bidirecional, entre aplicações móveis e sensores/atuadores industriais.
 
