@@ -92,6 +92,7 @@ class ValveScreen extends StatelessWidget {
           return const SizedBox.shrink();
         },
       ),
+      bottomNavigationBar: _buildSystemFooter(),
     );
   }
 
@@ -105,7 +106,7 @@ class ValveScreen extends StatelessWidget {
         padding: const EdgeInsets.all(30),
         decoration: BoxDecoration(
           color: const Color(0xFFD1D1C8),
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(24),
           border: Border.all(
             color: const Color.fromARGB(255, 196, 196, 195),
             width: 1,
@@ -179,6 +180,69 @@ class ValveScreen extends StatelessWidget {
                   minHeight: 10,
                 ),
               ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSystemFooter() {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+      decoration: const BoxDecoration(
+        color: Color(0xFFD1D1C8),
+        border: Border(
+          top: BorderSide(color: Color.fromARGB(137, 142, 142, 142), width: 1),
+        ),
+      ),
+      child: SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "TERM-ID: V-CTRL-099",
+                  style: GoogleFonts.inter(
+                    color: Colors.black54,
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  "FW V2.0.4-build.88",
+                  style: GoogleFonts.inter(
+                    color: Colors.black54,
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 4),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "PROTOCOLO: MQTT-WSS",
+                  style: GoogleFonts.inter(color: Colors.black54, fontSize: 10),
+                ),
+                Text(
+                  "SYS. UPTIME: 99.9%",
+                  style: GoogleFonts.inter(color: Colors.black54, fontSize: 10),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            Text(
+              "© 2024. Todos os direitos reservados.",
+              style: GoogleFonts.inter(
+                color: Colors.black45,
+                fontSize: 8,
+                letterSpacing: 1.5,
+              ),
+            ),
           ],
         ),
       ),

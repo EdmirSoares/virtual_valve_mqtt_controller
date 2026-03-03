@@ -33,7 +33,7 @@ class HeavyDutyToggle extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             color: const Color(0xFF4A4A4A),
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(16),
             boxShadow: const [
               BoxShadow(
                 color: Colors.black54,
@@ -62,7 +62,7 @@ class HeavyDutyToggle extends StatelessWidget {
                 height: 100,
                 decoration: BoxDecoration(
                   color: const Color(0xFF111111),
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(12),
                   border: Border.all(color: Colors.black87, width: 2),
                 ),
                 child: Stack(
@@ -82,7 +82,7 @@ class HeavyDutyToggle extends StatelessWidget {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                           ),
-                          borderRadius: BorderRadius.circular(8),
+                          borderRadius: BorderRadius.circular(10),
                           border: Border.all(color: Colors.black54, width: 1),
                           boxShadow: const [
                             BoxShadow(
